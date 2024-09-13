@@ -1,0 +1,348 @@
+/* globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #053105; /* Lime Green background color */
+  padding: 10px; /* Adjust padding as needed */
+  position: fixed; /* Ensure navbar stays at the top */
+  width: 100%; /* Full width of the viewport */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Make sure navbar is above other elements */
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px; /* Increase spacing between nav links */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 10%; /* Adjust margin-left as needed */
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  color: white;
+}
+
+.navbar-brand img {
+  margin-right: 10px; /* Adjust margin-right as needed */
+}
+.navbar-nav {
+  margin-right: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-nav .nav-link {
+  padding: 10px 20px; /* Adjust padding as needed */
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+  position: relative;
+  color: white;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff9b4e;
+  transition: width 0.3s;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #32cd32; /* Lime Green text color on hover */
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Carousel styling */
+.carousel {
+  height: 100vh; /* 80% of the viewport height */
+  position: relative;
+  margin-top: 60px; /* Adjust based on navbar height */
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Adjust control button size */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* Control button color */
+  border-radius: 50%; /* Rounded control buttons */
+}
+
+.Home-page-join {
+  color: white;
+}
+
+.center-hero {
+  background-color: black;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-us-text {
+  color: beige;
+}
+
+.section9 {
+  background-color: #012001;
+}
+
+.footer-form {
+  background-color: #012001;
+}
+.terms {
+  color: white;
+}
+label {
+  color: black;
+}
+
+.section9 h5 {
+  color: white;
+  font-size: 25px;
+  border-bottom: #fdffff solid 2px;
+}
+
+.section9 p {
+  color: white;
+  font-size: 12px;
+}
+
+::placeholder {
+  color: black; /* Set the placeholder color to black */
+  opacity: 1; /* Ensure full opacity */
+}
+
+.story {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.Portfolio {
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+.Portfolio div {
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+}
+.number {
+  font-size: 45px !important;
+  font-weight: 600 !important;
+  font-style: normal;
+  color: #32cd32;
+}
+
+.story-info {
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  color: #eae6e5;
+}
+
+.about-us-section {
+  padding: 4%;
+  background-color: #f5f5dd;
+}
+
+.our-mission {
+  color: #0a0a0a;
+}
+
+.mission-story-info {
+  color: #053005;
+}
+
+.People-connected {
+  color: #000;
+}
+
+.years-of-experience {
+  color: #000;
+}
+
+.form-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-for-help {
+  padding: 4%;
+}
+
+.contact {
+  height: auto;
+  border-top: #7a7b7d solid 1px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4%;
+  padding-top: none;
+}
+
+.contact-top {
+  display: flex;
+}
+
+.name,
+.phone,
+.email {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 1.05%;
+}
+
+.contact-top {
+  width: 72%;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name input,
+.phone input,
+.email input {
+  width: 100%;
+  height: 50px;
+  background-color: #f5f5dd;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.title {
+  font-size: 17px;
+  color: #7a7b7d;
+  padding-bottom: 2px;
+}
+
+.contact-bottom {
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-bottom textarea {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  background-color: #f5f5dd;
+  border: none;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+.contact-bottom textarea:placeholder {
+  color: #cccccc;
+  font-style: italic;
+}
+
+.contact button {
+  padding: 0.5%;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
